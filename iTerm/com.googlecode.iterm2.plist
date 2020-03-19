@@ -258,13 +258,13 @@
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.87450980392156863</real>
+				<real>0.81176470588235294</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.87450980392156863</real>
+				<real>0.81176470588235294</real>
 				<key>Red Component</key>
-				<real>0.87450980392156863</real>
+				<real>0.81176470588235294</real>
 			</dict>
 			<key>Ansi 8 Color</key>
 			<dict>
@@ -1331,12 +1331,12 @@
 		<key>screenFrame</key>
 		<string>{{0, 0}, {1920, 1200}}</string>
 		<key>topLeft</key>
-		<string>{542, 894}</string>
+		<string>{541, 894}</string>
 	</dict>
 	<key>NoSyncInstallationId</key>
 	<string>EEDF6A92-C8FC-475E-8CEA-BDEF934E6594</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>15</integer>
+	<integer>16</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
