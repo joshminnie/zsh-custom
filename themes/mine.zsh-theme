@@ -1,5 +1,15 @@
 function prompt_char {
-	if [ $UID -eq 0 ]; then echo "# "; else echo "$ "; fi
+  if [ $UID -eq 0 ]; then echo "# "; else echo "$ "; fi
+}
+
+function prompt_hostname {
+  local h="$(hostname)"
+
+  if [ "$HOST" = "$h" ]; then
+    echo 'local'
+  else
+    echo "$(hostname -s)"
+  fi
 }
 
 ZSH_THEME_GIT_PROMPT_PREFIX="["
@@ -15,5 +25,7 @@ ZSH_THEME_GIT_PROMPT_BRANCH="%{$fg_bold[blue]%}"
 ZSH_THEME_GIT_PROMPT_CLEAN="%{$fg_bold[green]%}%{✓%G%}"
 
 # Set the prompts
-PROMPT='%(!.%{$fg_bold[red]%}.%{$fg_bold[green]%}%n@)%m %{$fg_bold[blue]%}%(!.%1~.%~)%{${reset_color}%} $(git_super_status)%{$fg_bold[blue]%}$(prompt_char)%{${reset_color}%}'
+PROMPT='%(!.%{$fg_bold[red]%}.%{$fg_bold[green]%}%n@)$(prompt_hostname) %{$fg_bold[blue]%}%1~%{${reset_color}%} $(git_super_status)%{$fg_bold[blue]%}$(prompt_char)%{${reset_color}%}'
+# PROMPT='%(!.%{$fg_bold[red]%}.%{$fg_bold[green]%}%n@)%m %{$fg_bold[blue]%}%(!.%1~.%~)%{${reset_color}%} $(git_super_status)%{$fg_bold[blue]%}$(prompt_char)%{${reset_color}%}'
 # RPROMPT='$(git_super_status)'
+RPROMPT=''
