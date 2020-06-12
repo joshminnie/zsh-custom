@@ -1,3 +1,3 @@
 hubtrics=~/Projects/hubtrics
 
-alias label="cd $hubtrics;scripts/apply_labels.rb --repository"
+alias label="cd $hubtrics;bin/apply_labels --repository"

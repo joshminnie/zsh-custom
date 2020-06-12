@@ -14,14 +14,13 @@ $> git clone git@github.com:joshminnie/zsh-custom.git .zsh-custom
 
 **2. Update your .zshrc configuration**
 
-Update your .zshrc configuration be defining the variable, `ZSH_CUSTOM`. You may already have this defined or at least present in the original file. If you do just uncomment it and update the value.
+Update your .zshrc configuration by defining the variable, `ZSH_CUSTOM`. You may already have this defined or at least present in the original file. If you do just uncomment it and update the value.
 
 ```
 ZSH_CUSTOM=/path/to/.zsh-custom
 ```
 
 **3. Restart your zshell.**
-
 
 ```
 $> source $ZSH/oh-my-zsh.sh
