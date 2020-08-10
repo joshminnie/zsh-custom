@@ -5,7 +5,7 @@ alias dj="bin/delayed_job"
 alias rc="bundle exec rails c"
 alias bup="bin/bup"
 
-rs() {
+function rs {
   local port="$1"
   [[ -z "$port" ]] && port=3000
   if (( $+commands[passenger] )); then
@@ -22,4 +22,9 @@ EOF
   fi
 }
 
-alias kp="kill $(ps -A | grep -m1 nginx | awk '{print $1}')"
+# Kills instances of passenger that are running.
+function kp {
+  print "Killing passenger instances..."
+  kill $(ps -A | grep -m1 nginx | awk '{print $1}') >/dev/null 2>&1
+  echo "Done!"
+}
