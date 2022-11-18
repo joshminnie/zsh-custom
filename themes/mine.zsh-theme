@@ -26,6 +26,4 @@ ZSH_THEME_GIT_PROMPT_CLEAN="%{$fg_bold[green]%}%{✓%G%}"
 
 # Set the prompts
 PROMPT='%(!.%{$fg_bold[red]%}.%{$fg_bold[green]%}%n@)$(prompt_hostname) %{$fg_bold[blue]%}%1~%{${reset_color}%} $(git_super_status)%{$fg_bold[blue]%}$(prompt_char)%{${reset_color}%}'
-# PROMPT='%(!.%{$fg_bold[red]%}.%{$fg_bold[green]%}%n@)%m %{$fg_bold[blue]%}%(!.%1~.%~)%{${reset_color}%} $(git_super_status)%{$fg_bold[blue]%}$(prompt_char)%{${reset_color}%}'
-# RPROMPT='$(git_super_status)'
 RPROMPT=''
